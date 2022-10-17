@@ -10,7 +10,7 @@ to be sure nobody is misusing this service
 
 ### Third party libraries
 * [`WTL`](https://sourceforge.net/projects/wtl) Windows Template Library
-
+* Discord-rpc by Discord
 ### Thanks
 * Thanks to James Laird who implemented the original version of "Shairport"
 
