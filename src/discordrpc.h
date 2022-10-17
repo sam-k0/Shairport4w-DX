@@ -1,9 +1,10 @@
 #pragma once
+
+
 #include <libloaderapi.h>
 #include <string>
 #include "discord_rpc.h"
 #include "gms.h"
-#include "stdafx.h"
 
 /* DLL global variables */
 static const char* APPLICATION_ID = "345229890980937739";
@@ -223,3 +224,5 @@ gmint gmrpc_checkConnection(gmint n)
 {
     return n * 2;
 }
+
+

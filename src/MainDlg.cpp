@@ -1005,6 +1005,8 @@ LRESULT CMainDlg::Resume(UINT /*uMsg*/, WPARAM wParam, LPARAM /*lParam*/, BOOL& 
 	{
 		if (m_nMMState != play)
 		{
+
+
 			m_nMMState = play;
             CWindow::SetTimer(TIMER_ID_PROGRESS_INFO, 1000);
 

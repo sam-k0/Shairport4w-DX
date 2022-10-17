@@ -224,10 +224,10 @@ FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     GROUPBOX        "",IDC_STATIC_FRAME,7,7,241,166
     ICON            IDR_MAINFRAME,IDC_STATIC,116,26,20,20
-    LTEXT           "Shairport4w",IDC_STATIC_1,21,52,106,8,0,WS_EX_RIGHT
+    CTEXT           "Shairport4w DX",IDC_STATIC_1,26,53,99,8,0,WS_EX_RIGHT
     LTEXT           "",IDC_STATIC_VERSION,132,52,62,8
     LTEXT           "",IDC_STATIC_WAVEOUT,82,65,89,8
-    CTEXT           "(c) Copyright 2018\nFrank Friemel, Philippe Dubois\nDaniel Latimer\n\nShairport4w is based on Shairport by James Laird",IDC_STATIC_2,23,78,207,43
+    CTEXT           "Shairport4w DX is a fork of\nShairport4w by Frank Friemel, Philippe Dubois\nDaniel Latimer.\nShairport4w is based on Shairport by James Laird.\nThis version is maintained by\nsam-k0",IDC_STATIC_2,23,78,207,54
     DEFPUSHBUTTON   "Close",IDOK,102,149,50,14
 END
 
@@ -551,10 +551,10 @@ FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     GROUPBOX        "",IDC_STATIC_FRAME,7,7,241,168
     ICON            IDR_MAINFRAME,IDC_STATIC,116,26,20,20
-    LTEXT           "Shairport4w",IDC_STATIC_1,37,52,104,8,0,WS_EX_RIGHT
+    LTEXT           "Shairport4w DX",IDC_STATIC_1,37,52,102,8,0,WS_EX_RIGHT
     LTEXT           "",IDC_STATIC_VERSION,145,52,62,8
     CTEXT           "",IDC_STATIC_WAVEOUT,82,65,89,8
-    CTEXT           "(c) Copyright 2018\nFrank Friemel, Philippe Dubois\nDaniel Latimer\n\nShairport4w basiert auf Shairport von James Laird",IDC_STATIC_2,23,78,207,43
+    CTEXT           "Shairport4w DX is a fork of\nShairport4w by Frank Friemel, Philippe Dubois\nDaniel Latimer.\nShairport4w is based on Shairport by James Laird.\nThis version is maintained by\nsam-k0",IDC_STATIC_2,23,78,207,63
     DEFPUSHBUTTON   "Schlieﬂen",IDOK,102,148,50,14
 END
 

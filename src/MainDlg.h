@@ -10,7 +10,6 @@
 #include "MyBitmapButton.h"
 #include "TrayIcon.h"
 #include "DacpService.h"
-
 #include "MyAppMessages.h"
 
 class CMainDlg : public CDialogImpl<CMainDlg>, public CUpdateUI<CMainDlg>,

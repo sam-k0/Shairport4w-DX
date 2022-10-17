@@ -29,4 +29,5 @@ protected:
 
 private:
 	HICON				m_hIconSmall;
+
 };

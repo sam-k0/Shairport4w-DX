@@ -1101,7 +1101,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 		pSetThreadExecutionState = (_SetThreadExecutionState) GetProcAddress(hKernel32, "SetThreadExecutionState");
 	}
 
-	discordRun(); // Initialize discord
+	discordRun(); // Init discord
     int nRet = Run(lpstrCmdLine);
 
 	c_mtxConnection.Lock();
