@@ -1,3 +1,8 @@
+# Shairport4w DX
+A fork of Shairport4w, a tool to stream audio from iOS devices to Windows PCs
+
+This version primarily features discord rich presence integration.
+
 # Shairport4w
 An AirPlay Audio-Receiver for your Windows-PC
 
