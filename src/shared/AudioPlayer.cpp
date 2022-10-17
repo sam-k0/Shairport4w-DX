@@ -489,13 +489,18 @@ bool CAudioPlayer::Init(HANDLE hDataSource, UINT nDeviceID /*= WAVE_MAPPER*/, UL
 void CAudioPlayer::Play()
 {
 	if (m_threadWavePlay && m_threadWavePlay->IsPaused())
+	{ 
 		m_threadWavePlay->Pause();
+	}
+		
 }
 
 void CAudioPlayer::Pause()
 {
 	if (m_threadWavePlay && !m_threadWavePlay->IsPaused())
+	{
 		m_threadWavePlay->Pause();
+	}
 }
 
 void CAudioPlayer::Close()

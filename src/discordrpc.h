@@ -1,16 +1,13 @@
 #pragma once
-
-
-#include <libloaderapi.h>
 #include <string>
 #include "discord_rpc.h"
 #include "gms.h"
 
 /* DLL global variables */
 static const char* APPLICATION_ID = "345229890980937739";
-bool initialized = false;
-int64_t endTime = -1; // Since epoch
-int64_t startTime = -1; // Since epoch
+static bool initialized = false;
+static int64_t endTime = -1; // Since epoch
+static int64_t startTime = -1; // Since epoch
 
 /***
  Discord Callbacks
@@ -87,7 +84,7 @@ static void discordInit()
 * @param appid The app id of the app
 * @brief This is the first function to be called. Initializes the rpc dll
 */
-gmbool gmrpc_init(const char* appid)
+static gmbool gmrpc_init(const char* appid)
 {
     APPLICATION_ID = appid;
     discordInit();
@@ -99,7 +96,7 @@ gmbool gmrpc_init(const char* appid)
 * @brief Sets the start timestamp (Time since epoch)
 * @param passedTime The timestamp
 */
-gmbool gmrpc_setStarttime(gmint passedTime)
+static gmbool gmrpc_setStarttime(gmint passedTime)
 {
     startTime = int64_t(passedTime);
     return gmtrue;
@@ -109,7 +106,7 @@ gmbool gmrpc_setStarttime(gmint passedTime)
 * @brief Sets the end timestamp (Time since epoch)
 * @param passedTime The timestamp
 */
-gmbool gmrpc_setEndtime(gmint passedTime)
+static gmbool gmrpc_setEndtime(gmint passedTime)
 {
     endTime = int64_t(passedTime);
     return gmtrue;
@@ -122,7 +119,7 @@ gmbool gmrpc_setEndtime(gmint passedTime)
 * @param smallKey The image to show (small)
 * @brief This changes the presence of displayed info
 */
-gmbool gmrpc_setPresence(stringToDLL state, stringToDLL details, stringToDLL largeKey, stringToDLL smallKey)
+static gmbool gmrpc_setPresence(stringToDLL state, stringToDLL details, stringToDLL largeKey, stringToDLL smallKey)
 {
     if (!initialized) // Check if initialized rpc
     {
@@ -182,7 +179,7 @@ gmbool gmrpc_setPresence(stringToDLL state, stringToDLL details, stringToDLL lar
 /**
 * @brief Exits and frees the dll
 */
-gmbool gmrpc_exit()
+static gmbool gmrpc_exit()
 {
     if (!initialized) // Check if initialized rpc
     {
@@ -199,7 +196,7 @@ gmbool gmrpc_exit()
 /**
 * @brief Reset presence
 */
-gmbool gmrpc_clear()
+static gmbool gmrpc_clear()
 {
     if (!initialized) // Check if initialized rpc
     {
@@ -220,7 +217,7 @@ gmbool gmrpc_clear()
 /**
 * @brief This is to check the connection to the dll. Does nothing really.
 */
-gmint gmrpc_checkConnection(gmint n)
+static gmint gmrpc_checkConnection(gmint n)
 {
     return n * 2;
 }

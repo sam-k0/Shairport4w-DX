@@ -173,10 +173,10 @@
     <ClInclude Include="shared\utils.h">
       <Filter>Header Files\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="discordrpc.h">
+    <ClInclude Include="gms.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gms.h">
+    <ClInclude Include="discordrpc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,7 +5,7 @@
  */
 #include "stdafx.h"
 #include "resource.h"
-
+#include "discordrpc.h"
 #include "aboutdlg.h"
 #include "MainDlg.h"
 #include "ExtOptsDlg.h"
