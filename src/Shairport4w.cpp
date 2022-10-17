@@ -5,7 +5,7 @@
  */
 
 #include "stdafx.h"
-
+#include "discordrpc.h"
 #include "resource.h"
 
 #include "aboutdlg.h"
@@ -965,6 +965,16 @@ LRESULT CALLBACK OnDTKeyboardEvent(int nCode, WPARAM wParam, LPARAM lParam)
 	return CallNextHookEx(g_hDesktopHook, nCode, wParam, lParam);
 }
 
+
+/////////////////////////////////////////////////////////////////////
+// Discord init
+
+void discordRun()
+{
+	gmrpc_init("1031435642342744135");
+	gmrpc_setPresence("Ready", "Not connected", "sp4wdx", "");
+}
+
 /////////////////////////////////////////////////////////////////////
 // Run
 
@@ -1090,6 +1100,8 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 	{
 		pSetThreadExecutionState = (_SetThreadExecutionState) GetProcAddress(hKernel32, "SetThreadExecutionState");
 	}
+
+	discordRun(); // Initialize discord
     int nRet = Run(lpstrCmdLine);
 
 	c_mtxConnection.Lock();
@@ -1108,6 +1120,8 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 	DeInitBonjour();
 
 	::CoUninitialize();
+
+	gmrpc_exit();
 
 	return nRet;
 }

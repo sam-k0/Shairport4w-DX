@@ -118,7 +118,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>gdiplus.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdiplus.lib;kernel32.lib;$(SolutionDir)packages\discordrpc\discord-rpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -204,7 +204,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>gdiplus.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdiplus.lib;kernel32.lib;$(SolutionDir)packages\discordrpc\discord-rpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
@@ -279,6 +279,7 @@
     <ClInclude Include="AboutDlg.h" />
     <ClInclude Include="alac.h" />
     <ClInclude Include="discordrpc.h" />
+    <ClInclude Include="gms.h" />
     <ClInclude Include="shared\AudioPlayer.h" />
     <ClInclude Include="shared\base64.h" />
     <ClInclude Include="Bonjour\dns_sd.h" />
